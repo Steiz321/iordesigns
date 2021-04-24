@@ -121,7 +121,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #000000;
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     z-index: 10000;
 }
 
@@ -159,6 +161,7 @@ body {
 /* Howto */
 .howto {
     width: 100%;
+    background-color: #42313a;
 }
 
 .howto__inner {
@@ -190,21 +193,23 @@ body {
 }
 
 .howto__name {
-    color: #000;
+    color: #e5e5e5;
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding: 30px 0 60px;
     text-align: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .howto__icon {
     font-size: 150px;
+    color: #e5e5e5;
     text-align: center;
 }
 
 .howto__text {
+    color: #e5e5e5;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -213,10 +218,11 @@ body {
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: #000;
+    color: #e5e5e5;
 }
 
 .howto__subtitle {
+    color: #e5e5e5;
     font-size: 18px;
 }
 
@@ -252,9 +258,10 @@ body {
 
 .about__title {
     color: #42313a;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
 }
 
 .about__text {
@@ -262,4 +269,462 @@ body {
     color: #000;
     font-weight: 400;
     font-style: italic;
+}
+
+
+/* Styles */
+.styles {
+    width: 100%;
+    height: 170px;
+}
+
+.styles__name {
+    color: #000;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0 40px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+/* LOFT */
+.loft {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #6e6702;
+    z-index: 0;
+}
+
+.loft.active {
+    width: 100%;
+    height: 800px;
+}
+
+.loft__bg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background:
+    url("../images/loftbg.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.loft__bg.active {
+    height: 800px;
+}
+
+.loft__inner {
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+.loft__title {
+    width: 50%;
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.loft__right {
+    width: 50%;
+}
+
+.loft__text {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.loft__button {
+    width: 180px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.loft__button:hover {
+    color: #000;
+    font-size: 18px;
+    background-color: #fff;
+    border-color: 0;
+    transition: 0.4s;
+}
+
+.loft__accordion {
+    display: none;
+}
+
+.loft__accordion.active {
+    display: block;
+    position: relative;
+    z-index: 3;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.loft__photo {
+    width: 400px;
+    height: 300px;
+}
+
+/* MODERN */
+.modern {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #f1dcc9;
+    z-index: 0;
+}
+
+.modern.active {
+    width: 100%;
+    height: 800px;
+}
+
+.modern__bg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background:
+    url("../images/modernbg.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.modern__bg.active {
+    height: 800px;
+}
+
+.modern__inner {
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+.modern__title {
+    width: 50%;
+    font-size: 90px;
+    color: #42313a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.modern__right {
+    width: 50%;
+}
+
+.modern__text {
+    font-size: 18px;
+    color: #42313a;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.modern__button {
+    width: 180px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #42313a;
+    color: #42313a;
+    margin-top: 25px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.modern__button:hover {
+    color: #fff;
+    font-size: 18px;
+    background-color: #42313a;
+    border-color: 0;
+    transition: 0.4s;
+}
+
+.modern__accordion {
+    display: none;
+}
+
+.modern__accordion.active {
+    display: block;
+    position: relative;
+    z-index: 3;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.modern__photo {
+    width: 400px;
+    height: 300px;
+}
+
+/* HI-TECH */
+.hitech {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #896e69;
+    z-index: 0;
+}
+
+.hitech.active {
+    width: 100%;
+    height: 800px;
+}
+
+.hitech__bg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background:
+    url("../images/hitechbg.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hitech__bg.active {
+    height: 800px;
+}
+
+.hitech__inner {
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+.hitech__title {
+    width: 50%;
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.hitech__right {
+    width: 50%;
+}
+
+.hitech__text {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.hitech__button {
+    width: 180px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.hitech__button:hover {
+    color: #000;
+    font-size: 18px;
+    background-color: #fff;
+    border-color: 0;
+    transition: 0.4s;
+}
+
+.hitech__accordion {
+    display: none;
+}
+
+.hitech__accordion.active {
+    display: block;
+    position: relative;
+    z-index: 3;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hitech__photo {
+    width: 400px;
+    height: 300px;
+}
+
+/* MINIMALISM */
+.minimalism {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #ffa577;
+    z-index: 0;
+}
+
+.minimalism.active {
+    width: 100%;
+    height: 800px;
+}
+
+.minimalism__bg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background:
+    url("../images/minimalismbg.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.minimalism__bg.active {
+    height: 800px;
+}
+
+.minimalism__inner {
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+.minimalism__title {
+    width: 50%;
+    font-size: 80px;
+    color: #42313a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.minimalism__right {
+    width: 50%;
+}
+
+.minimalism__text {
+    font-size: 18px;
+    color: #42313a;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.minimalism__button {
+    width: 180px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #42313a;
+    color: #42313a;
+    margin-top: 25px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.minimalism__button:hover {
+    color: #fff;
+    font-size: 18px;
+    background-color: #42313a;
+    border-color: 0;
+    transition: 0.4s;
+}
+
+.minimalism__accordion {
+    display: none;
+}
+
+.minimalism__accordion.active {
+    display: block;
+    position: relative;
+    z-index: 3;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.minimalism__photo {
+    width: 400px;
+    height: 300px;
+}
+
+/* Works */
+.works {
+    width: 100%;
+    min-height: 1600px;
+    background-color: #f1dcc9;
+}
+
+.works__name {
+    color: #000;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0 40px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.works__item {
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.works__img {
+    width: 800px;
+    height: 400px;
 }
