@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/twentytwenty.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="BeerSlider.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6e14faf9c.js" crossorigin="anonymous"></script>
     <title>IOR designs</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <a href="#"><img class="logo" src="./assets/images/logo.png" alt=""></a>
                 <div class="nav">
-                    <a class="nav__link" href="#">Главная</a>
-                    <a class="nav__link" href="#">Подробнее</a>
-                    <a class="nav__link" href="#">Стили</a>
-                    <a class="nav__link" href="#">Наши работы</a>
+                    <a class="nav__link" href="#" data-scroll="#intro">Главная</a>
+                    <a class="nav__link" href="#" data-scroll="#about">О нас</a>
+                    <a class="nav__link" href="#" data-scroll="#howto">Процесс</a>
+                    <a class="nav__link" href="#" data-scroll="#styles">Стили</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Наши работы</a>
+                    <a class="nav__link" href="#" data-scroll="#form1">Запись</a>
                 </div>
 
                 <div class="nav">
@@ -37,7 +39,7 @@
 
     <div class="page">
         <!-- Intro -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="intro__bg"></div>
 
             <div class="container">
@@ -59,7 +61,7 @@
         </div><!-- /.Intro -->
 
         <!-- About -->
-        <div class="about">
+        <div class="about" id="about">
             <div class="container">
                 <div class="about__inner">
                     <div class="about__name">В чем же наша особенность?</div>
@@ -94,7 +96,7 @@
         </div><!-- /.About -->
 
         <!-- Howto -->
-        <div class="howto">
+        <div class="howto" id="howto">
             <div class="container">
                 <div class="howto__name">Как мы работаем</div>
                 <div class="howto__inner">
@@ -133,7 +135,7 @@
         </div><!-- /.Howto -->
 
         <!-- Styles -->
-        <div class="styles">
+        <div class="styles" id="styles">
             <div class="container">
                 <div class="styles__inner">
                     <div class="styles__name">С чем мы работаем</div>
@@ -142,19 +144,19 @@
         </div><!-- /.Styles -->
 
         <!-- LOFT -->
-        <div class="loft active">
-            <div class="loft__bg active"></div>
+        <div class="loft" id="loft">
+            <div class="loft__bg"></div>
 
             <div class="container">
                 <div class="loft__inner">
                     <div class="loft__title">LOFT</div>
                     <div class="loft__right">
                         <div class="loft__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="loft__button">Подробнее</button>
+                        <button class="loft__button" data-collapse="#loft">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="loft__accordion active">
+                <div class="loft__accordion">
                     <img class="loft__photo" src="./assets/images/loft/1.jpg" alt="">
                     <img class="loft__photo" src="./assets/images/loft/2.jpg" alt="">
                     <img class="loft__photo" src="./assets/images/loft/3.jpg" alt="">
@@ -172,11 +174,11 @@
                     <div class="modern__title">MODERN</div>
                     <div class="modern__right">
                         <div class="modern__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="modern__button">Подробнее</button>
+                        <button class="modern__button" data-collapse="#modern">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="modern__accordion">
+                <div class="modern__accordion" id="modern">
                     <img class="modern__photo" src="./assets/images/modern/1.jpg" alt="">
                     <img class="modern__photo" src="./assets/images/modern/2.jpg" alt="">
                     <img class="modern__photo" src="./assets/images/modern/3.jpg" alt="">
@@ -193,11 +195,11 @@
                     <div class="hitech__title">HI-TECH</div>
                     <div class="hitech__right">
                         <div class="hitech__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="hitech__button">Подробнее</button>
+                        <button class="hitech__button" data-collapse="#hitech">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="hitech__accordion">
+                <div class="hitech__accordion" id="hitech">
                     <img class="hitech__photo" src="./assets/images/hitech/1.jpg" alt="">
                     <img class="hitech__photo" src="./assets/images/hitech/2.jpg" alt="">
                     <img class="hitech__photo" src="./assets/images/hitech/3.jpg" alt="">
@@ -215,11 +217,11 @@
                     <div class="minimalism__title">MINIMALISM</div>
                     <div class="minimalism__right">
                         <div class="minimalism__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="minimalism__button">Подробнее</button>
+                        <button class="minimalism__button" data-collapse="#minimalism">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="minimalism__accordion">
+                <div class="minimalism__accordion" id="minimalism">
                     <img class="minimalism__photo" src="./assets/images/minimalism/1.jpg" alt="">
                     <img class="minimalism__photo" src="./assets/images/minimalism/2.jpg" alt="">
                     <img class="minimalism__photo" src="./assets/images/minimalism/3.jpg" alt="">
@@ -229,10 +231,10 @@
         </div><!-- /.MINIMALISM -->
 
         <!-- works -->
-        <div class="works">
+        <div class="works" id="works">
             <div class="container">
                 <div class="works__inner">
-                    <div class="works__name">Наши работы</div>
+                    <div class="works__name">Наши проекты</div>
 
                     <div class="works__items">
                         <div class="works__item">
@@ -266,7 +268,52 @@
             </div>
         </div><!-- /.works -->
 
-        
+
+        <!-- form -->
+        <div class="form" id="form1">
+            <div class="form__bg"></div>
+            <div class="container">
+                <div class="form__inner">
+                    <form action="" id="form" class="form__body">
+                        <div class="form__title">Оставить заявку</div>
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                        </div>
+                        <div class="form__item">
+                            <label for="formNumber" class="form__label">Номер телефона*:</label>
+                            <input id="formNumber" type="text" name="number" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Сообщение:</label>
+                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /.form -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                   <div class="footer__item">
+                       <a class="nav__link" href="#">Главная</a>
+                       <a class="nav__link" href="#">О нас</a>
+                   </div>
+                   <div class="footer__item"><img class="footer__icon" src="./assets/images/logo.png" alt=""></div> 
+                   <div class="footer__item">
+                        <a class="nav__link" href="#">Стили</a>
+                        <a class="nav__link" href="#">Наши роботы</a>
+                   </div>     
+                </div>
+            </div>
+        </footer>
 
     </div>
 
@@ -274,6 +321,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./assets/js/jquery.event.move.js"></script>
         <script src="./assets/js/jquery.twentytwenty.js"></script>
+        <script src="./assets/js/beforeafter.js"></script>
         <script src="./assets/js/script.js"></script>
 
 </body>
