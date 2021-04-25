@@ -21,7 +21,7 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#"><img class="logo" src="./assets/images/logo.png" alt=""></a>
+                <a href="#" data-scroll="#intro"><img class="logo" src="./assets/images/logo.png" alt=""></a>
                 <div class="nav">
                     <a class="nav__link" href="#" data-scroll="#intro">Главная</a>
                     <a class="nav__link" href="#" data-scroll="#about">О нас</a>
@@ -31,12 +31,34 @@
                     <a class="nav__link" href="#" data-scroll="#form1">Запись</a>
                 </div>
 
-                
+                <a class="nav__btn" href="#" data-collapse="burger">
+                    <img class="burger__btn" src="./assets/images/burger_btn.png" alt="">
+                </a>
+            </div>
+            <div class="header__burger" id="burger">
+                <div class="nav--burger">
+                    <a class="nav__link burger" href="#" data-scroll="#intro" data-collapse="burger">Главная</a>
+                    <a class="nav__link burger" href="#" data-scroll="#about" data-collapse="burger">О нас</a>
+                    <a class="nav__link burger" href="#" data-scroll="#howto" data-collapse="burger">Процесс</a>
+                    <a class="nav__link burger" href="#" data-scroll="#styles" data-collapse="burger">Стили</a>
+                    <a class="nav__link burger" href="#" data-scroll="#works" data-collapse="burger">Наши работы</a>
+                    <a class="nav__link burger" href="#" data-scroll="#form1" data-collapse="burger">Запись</a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="page">
+
+        <!-- HelloPreload http://hello-site.ru/preloader/ -->
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #FDE3A7 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;background-size:76px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
+        <div class="scrollup" data-scroll="#intro"><i class="fas fa-arrow-up"></i></div>
+
+
         <!-- Intro -->
         <div class="intro" id="intro">
             <div class="intro__bg"></div>

@@ -26,6 +26,29 @@ body {
     margin: 0 auto;
 }
 
+.scrollup {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 5px;
+  transition: .5s;
+  z-index: 2000;
+}
+
+.scrollup:hover {
+    background-position: 100% 0;
+  }
+
 /* Intro */
 .intro {
     width: 100%;
@@ -125,7 +148,7 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 10000;
+    
 }
 
 .header.fixed {
@@ -138,14 +161,70 @@ body {
     background-color: #000;
     border: 0;
     box-shadow: none;
+    z-index: 999;
+}
+
+.header.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1001;
+}
+
+.header__burger {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    border-top: 1px solid #fff;
+    z-index: 1001;
+}
+
+.header__burger.active {
+    display: block;
+}
+
+.nav--burger {
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav__link.burger {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 27px;
+    border-bottom: 1px solid #fff;
 }
 
 .header__inner {
+    align-items: center;
+    padding-top: 25px;
     height: 70px;
     display: flex;
     justify-content: space-between;
 }
 
+.nav__btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.burger__btn {
+    width: 50px;
+    height: 50px;
+}
 
 /* Nav */
 .logo {
@@ -154,7 +233,7 @@ body {
 }
 
 .nav {
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 .nav__link {
@@ -1163,6 +1242,32 @@ textarea.form__input {
     .nav {
         display: none;
     }
+
+    .nav__btn {
+        display: block;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .header.fixed {
+        height: 70px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .header__inner {
+        padding-top: 5px;
+    }
+
+    .header__burger {
+        top: 70px;
+    }
+    
     /* intro */
     .intro__inner {
         padding: 0;
@@ -1331,6 +1436,11 @@ textarea.form__input {
     
     .footer {
         height: 150px;
+    }
+
+    /* Scrollup */
+    .scrollup {
+        display: none;
     }
 }
 

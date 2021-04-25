@@ -43,7 +43,6 @@ $(function() {
         }, 500);
     });
 
-
     /* Collapse */
     $("[data-collapse='loft']").on("click", function(event) {
         event.preventDefault();
@@ -73,5 +72,20 @@ $(function() {
         $("[id='minimalism']").toggleClass("active");
     });
 
+    $("[data-collapse='burger']").on("click", function(event) {
+        event.preventDefault();
+
+
+        $("[id='burger']").toggleClass("active");
+        $("[id='header']").toggleClass("burger");
+    });
+
+    $("[data-collapse='burger__btn']").on("click", function(event) {
+        event.preventDefault();
+
+
+        $("[id='burger']").toggleClass("active");
+        $("[id='header']").toggleClass("burger");
+    });
     
 });
