@@ -148,7 +148,7 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    
+    z-index: 10;
 }
 
 .header.fixed {
