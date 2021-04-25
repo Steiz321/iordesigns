@@ -1,5 +1,8 @@
 $(function() {
 
+    /* slider */
+    $('.slider').slick();
+
     var header = $("#header"),
     introH = $("#intro").innerHeight(),
     scrollOffset = $(window).scrollTop();
@@ -42,12 +45,33 @@ $(function() {
 
 
     /* Collapse */
-    $("[data-collapse]").on("click", function(event) {
+    $("[data-collapse='loft']").on("click", function(event) {
         event.preventDefault();
 
-        var $this = $(this),
-            blockId =  $this.data('collapse');
 
-        $this.toggleClass("active");
+        $("[id='loft']").toggleClass("active");
     });
+
+    $("[data-collapse='modern']").on("click", function(event) {
+        event.preventDefault();
+
+
+        $("[id='modern']").toggleClass("active");
+    });
+
+    $("[data-collapse='hitech']").on("click", function(event) {
+        event.preventDefault();
+
+
+        $("[id='hitech']").toggleClass("active");
+    });
+
+    $("[data-collapse='minimalism']").on("click", function(event) {
+        event.preventDefault();
+
+
+        $("[id='minimalism']").toggleClass("active");
+    });
+
+    
 });

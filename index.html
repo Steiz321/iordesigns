@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="./assets/css/twentytwenty.css">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6e14faf9c.js" crossorigin="anonymous"></script>
     <title>IOR designs</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header" id="header">
@@ -28,11 +31,7 @@
                     <a class="nav__link" href="#" data-scroll="#form1">Запись</a>
                 </div>
 
-                <div class="nav">
-                    <a class="nav__link" href="#">RU</a>
-                    <a class="nav__link" href="#">UA</a>
-                    <a class="nav__link" href="#">ENG</a>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -45,15 +44,15 @@
             <div class="container">
                 <div class="intro__inner">
                     <div class="intro__left">
-                        <img class="intro__logo" src="./assets/images/logo.png" alt="">
+                        <img class="intro__logo" src="./assets/images/logo.png" data-aos="fade-up-right" alt="">
                     </div>
 
-                    <div class="intro__right">
+                    <div class="intro__right" data-aos="fade-up-left">
                         <div class="intro__title">Imagine. Order. Receive.</div>
                         <div class="intro__text">
-                            Все что требуется от нашего клиента это его пожелания и хорошее настроeние, все остальное сделает наша команда! Рекомендуем ознакомиться с нашими услугами получше.
+                            Все что требуется от нашего клиента - это его пожелания и хорошее настроeние, все остальное сделает наша команда! Рекомендуем ознакомиться с нашими услугами получше.
                         </div>
-                        <button class="intro__button">Связаться с нами!</button>
+                        <button class="intro__button" data-scroll="#form1">Связаться с нами!</button>
                     </div>
                 </div>
             </div>
@@ -64,31 +63,31 @@
         <div class="about" id="about">
             <div class="container">
                 <div class="about__inner">
-                    <div class="about__name">В чем же наша особенность?</div>
+                    <div class="about__name" data-aos="zoom-in-up">В чем же наша особенность?</div>
                     <div class="about__items">
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">1. Системный подход</div>
                             <div class="about__text">мы готовимся к каждой встрече и просим клиента тоже подготовится. Подготовка состоит в том, что клиент и мы подбираем примеры картинок, которые максимально передают все пожелания клиента и его страсть!  На основание этого формируется развернутое ТЗ.</div>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">2.Четкий график работ</div>
                             <div class="about__text">Формируем четкий график выполнения дизайн-проекта, ведется журнал авторского надзора, все строительные работы разбиты на временные отрезки, учитывающие технологические паузы в связи с мокрыми процессами.</div>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">3. Опыт в реализации объектов</div>
                             <div class="about__text">Нами было Реализовано достаточное количество интерьеров, опробованы всевозможные материалы и подходы, сформированы технологичные карты для каждого с этапов строительных работ.</div>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">4. Знание современных технологий дизайна и ремонта</div>
                             <div class="about__text">Все специалисты нашей компании, даже визуализаторы, должны разбираться в базовых технологиях строительства и ремонта, это нужно для того, чтобы придумывать то, что можно будет в итоге реализовать.</div>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">5. Услуга комплектации</div>
                             <div class="about__text">Данная услуга предполагает поиск для клиента лучших цен на материалы, освещение, мебель и т.д. Также мы согласуем сроки поставки, подгоним их под процесс ремонта, проверим комплектность и соответствие заказным артикулам, доставим и осуществим занос материалов или же организуем их хранение на складе.</div>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="zoom-in-up">
                             <div class="about__title">6. Честность</div>
-                            <div class="about__text">Мы тоже хотим заработать и делаем это без обмана. Заключаем договор касательно комплектации объекта, согласно которому мы получаем не более 10% от прибыли поставщика. Обязательным является критерий соблюдения цены поставщиком, согласно нашему агентскому договору, поставщик не имеет права завышать базовую стоимость товара. В итоге это выгодно всем: заказчику – получить минимальную цену, дизайнеру – получить процент за работу и поставщику – получить гарантированный заказ.</div>
+                            <div class="about__text">Заключаем договор касательно комплектации объекта, согласно которому мы получаем не более 10% от прибыли поставщика. Cогласно нашему агентскому договору, поставщик не имеет права завышать базовую стоимость товара. В итоге это выгодно всем: заказчику – получить минимальную цену, дизайнеру – получить процент за работу и поставщику – получить гарантированный заказ.</div>
                         </div>
                     </div>
                 </div>
@@ -98,37 +97,37 @@
         <!-- Howto -->
         <div class="howto" id="howto">
             <div class="container">
-                <div class="howto__name">Как мы работаем</div>
+                <div class="howto__name" data-aos="zoom-in-up">Как мы работаем</div>
                 <div class="howto__inner">
                     <div class="howto__item--left">
-                        <div class="howto__icon"><i class="fas fa-ruler-combined"></i></div>
-                        <div class="howto__text">
+                        <div class="howto__icon" data-aos="fade-right"><i class="fas fa-ruler-combined"></i></div>
+                        <div class="howto__text" data-aos="fade-left">
                             <div class="howto__title">Обмеры объекта</div>
                             <div class="howto__subtitle">Архитектурные обмеры объекта, по которым будет разрабатываться дизайн-проект – трудоемкий процесс, когда необходимо замерять не только длину каждой стены по полу и ее высоту, но и каждый откос, дверной проем, выступ, неровность, выводы коммуникаций, несущие стены, простенки и т.д.</div>
                         </div>
                     </div>
                     <div class="howto__item--right">
-                        <div class="howto__text">
+                        <div class="howto__text" data-aos="fade-right">
                             <div class="howto__title">Планировочные решения</div>
                             <div class="howto__subtitle">На основе составленного технического задания совершается разработка наиболее оптимального планировочного решения (если необходимо – несколько вариантов на выбор). Главной задачей грамотно составленного планировочного решения является функциональное распределение зон помещений с учетом всех законов эргономики. При этом учитываются все исходные данные, полученные на основе формирования технического задания. И находится самое оптимальное решение, чтобы каждый квадратный метр был распределен максимально эффективно</div>
                         </div>
-                        <div class="howto__icon"><i class="fas fa-drafting-compass"></i></div>
+                        <div class="howto__icon" data-aos="fade-left"><i class="fas fa-drafting-compass"></i></div>
                     </div>
                     <div class="howto__item--left">
-                        <div class="howto__icon"><i class="far fa-lightbulb"></i></div>
-                        <div class="howto__text">
+                        <div class="howto__icon" data-aos="fade-right"><i class="far fa-lightbulb"></i></div>
+                        <div class="howto__text" data-aos="fade-left">
                             <div class="howto__title">Разработка идеи, концепции</div>
                             <div class="howto__subtitle">На основе составленного технического задания мы начинаем работу над основной концепцией проекта. То есть на этом этапе происходит поиск идеи. Это синтез ваших личных предпочтений с профессиональным видением дизайнера, на основе чего и рождается то решение, которое будет являться стержнем проекта и на чем будут базироваться все последующие решения.</div>
                         </div>
                     </div>
                     <div class="howto__item--right">
-                        <div class="howto__text">
+                        <div class="howto__text" data-aos="fade-right">
                             <div class="howto__title">Ремонт «под ключ»</div>
                             <div class="howto__subtitle">Это заключительный и финальный етап нашей работы - Ремонт. Ремонт – это непросто. Но если есть дизайн-проект с рабочей документацией, авторским надзором и проверенной бригадой профессиональных мастеров, тогда воплощение авторского проекта максимально реализуемо.
 
                                 Соединение воедино всех этих составляющих работы над проектом дает в итоге самый качественный и точный результат.</div>
                         </div>
-                        <div class="howto__icon"><i class="fas fa-paint-roller"></i></div>
+                        <div class="howto__icon" data-aos="fade-left"><i class="fas fa-paint-roller"></i></div>
                     </div>
                 </div>
             </div>
@@ -138,93 +137,125 @@
         <div class="styles" id="styles">
             <div class="container">
                 <div class="styles__inner">
-                    <div class="styles__name">С чем мы работаем</div>
+                    <div class="styles__name" data-aos="zoom-in-up">С чем мы работаем</div>
                 </div>
             </div>
         </div><!-- /.Styles -->
 
         <!-- LOFT -->
         <div class="loft" id="loft">
-            <div class="loft__bg"></div>
+            <div class="loft__bg" id="loft"></div>
 
             <div class="container">
-                <div class="loft__inner">
-                    <div class="loft__title">LOFT</div>
-                    <div class="loft__right">
+                <div class="style__inner">
+                    <div class="loft__title" data-aos="fade-right">LOFT</div>
+                    <div class="loft__right" data-aos="zoom-in-up">
                         <div class="loft__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="loft__button" data-collapse="#loft">Подробнее</button>
+                        <button class="loft__button" data-collapse="loft">Подробнее</button>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <div class="loft__accordion">
-                    <img class="loft__photo" src="./assets/images/loft/1.jpg" alt="">
-                    <img class="loft__photo" src="./assets/images/loft/2.jpg" alt="">
-                    <img class="loft__photo" src="./assets/images/loft/3.jpg" alt="">
-                </div>
             </div>
 
         </div><!-- /.LOFT -->
 
         <!-- MODERN -->
-        <div class="modern">
-            <div class="modern__bg"></div>
+        <div class="modern" id="modern">
+            <div class="modern__bg" id="modern"></div>
 
             <div class="container">
-                <div class="modern__inner">
-                    <div class="modern__title">MODERN</div>
-                    <div class="modern__right">
+                <div class="style__inner">
+                    <div class="modern__title" data-aos="fade-right">MODERN</div>
+                    <div class="modern__right" data-aos="fade-left">
                         <div class="modern__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="modern__button" data-collapse="#modern">Подробнее</button>
+                        <button class="modern__button" data-collapse="modern">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="modern__accordion" id="modern">
-                    <img class="modern__photo" src="./assets/images/modern/1.jpg" alt="">
-                    <img class="modern__photo" src="./assets/images/modern/2.jpg" alt="">
-                    <img class="modern__photo" src="./assets/images/modern/3.jpg" alt="">
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/3.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!-- /.MODERN -->
 
         <!-- HI-TECH -->
-        <div class="hitech">
-            <div class="hitech__bg"></div>
+        <div class="hitech" id="hitech">
+            <div class="hitech__bg" id="hitech"></div>
 
             <div class="container">
-                <div class="hitech__inner">
-                    <div class="hitech__title">HI-TECH</div>
-                    <div class="hitech__right">
+                <div class="style__inner">
+                    <div class="hitech__title" data-aos="fade-right">HI-TECH</div>
+                    <div class="hitech__right" data-aos="fade-left">
                         <div class="hitech__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="hitech__button" data-collapse="#hitech">Подробнее</button>
+                        <button class="hitech__button" data-collapse="hitech">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="hitech__accordion" id="hitech">
-                    <img class="hitech__photo" src="./assets/images/hitech/1.jpg" alt="">
-                    <img class="hitech__photo" src="./assets/images/hitech/2.jpg" alt="">
-                    <img class="hitech__photo" src="./assets/images/hitech/3.jpg" alt="">
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/3.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div><!-- /.HI-TECH -->
 
         <!-- MINIMALISM -->
-        <div class="minimalism">
-            <div class="minimalism__bg"></div>
+        <div class="minimalism" id="minimalism">
+            <div class="minimalism__bg" id="minimalism"></div>
 
             <div class="container">
-                <div class="minimalism__inner">
-                    <div class="minimalism__title">MINIMALISM</div>
-                    <div class="minimalism__right">
+                <div class="style__inner">
+                    <div class="minimalism__title" data-aos="fade-right">MINIMALISM</div>
+                    <div class="minimalism__right" data-aos="fade-left">
                         <div class="minimalism__text">Атмосфера свободы, молодости, отказ от помпезности и украшательства – все это «Лофт», наверное, самый не затратный в создании, немного бунтарский и богемный стиль.</div>
-                        <button class="minimalism__button" data-collapse="#minimalism">Подробнее</button>
+                        <button class="minimalism__button" data-collapse="minimalism">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="minimalism__accordion" id="minimalism">
-                    <img class="minimalism__photo" src="./assets/images/minimalism/1.jpg" alt="">
-                    <img class="minimalism__photo" src="./assets/images/minimalism/2.jpg" alt="">
-                    <img class="minimalism__photo" src="./assets/images/minimalism/3.jpg" alt="">
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__photo" src="./assets/images/loft/3.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -234,9 +265,9 @@
         <div class="works" id="works">
             <div class="container">
                 <div class="works__inner">
-                    <div class="works__name">Наши проекты</div>
+                    <div class="works__name" data-aos="zoom-in-up">Наши проекты</div>
 
-                    <div class="works__items">
+                    <div class="works__items" data-aos="zoom-in-left">
                         <div class="works__item">
                             <div id="before__after1">
                                 <!-- The before image is first -->
@@ -249,18 +280,18 @@
                         <div class="works__item">
                             <div id="before__after2">
                                 <!-- The before image is first -->
-                                <img class="works__img" src="./assets/images/beforeafter/before4.jpg" />
+                                <img class="works__img" src="./assets/images/beforeafter/before3.jpg" />
                                 <!-- The after image is last -->
-                                <img class="works__img" src="./assets/images/beforeafter/after3.jpg" />
+                                <img class="works__img" src="./assets/images/beforeafter/after2.jpg" />
                             </div>
                         </div>
 
                         <div class="works__item">
                             <div id="before__after3">
                                 <!-- The before image is first -->
-                                <img class="works__img" src="./assets/images/beforeafter/before4.jpg" />
+                                <img class="works__img" src="./assets/images/beforeafter/before1.jpg" />
                                 <!-- The after image is last -->
-                                <img class="works__img" src="./assets/images/beforeafter/after3.jpg" />
+                                <img class="works__img" src="./assets/images/beforeafter/after1.jpg" />
                             </div>
                         </div>
                     </div>
@@ -274,26 +305,28 @@
             <div class="form__bg"></div>
             <div class="container">
                 <div class="form__inner">
-                    <form action="" id="form" class="form__body">
-                        <div class="form__title">Оставить заявку</div>
-                        <div class="form__item">
-                            <label for="formName" class="form__label">Имя*:</label>
-                            <input id="formName" type="text" name="name" class="form__input _req">
-                        </div>
-                        <div class="form__item">
-                            <label for="formEmail" class="form__label">E-mail*:</label>
-                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
-                        </div>
-                        <div class="form__item">
-                            <label for="formNumber" class="form__label">Номер телефона*:</label>
-                            <input id="formNumber" type="text" name="number" class="form__input _req">
-                        </div>
-                        <div class="form__item">
-                            <label for="formMessage" class="form__label">Сообщение:</label>
-                            <textarea name="message" id="formMessage" class="form__input"></textarea>
-                        </div>
-                        <button type="submit" class="form__button">Отправить</button>
-                    </form>
+                    <div class="form__in">
+                        <form action="./assets/php/telegram.php" method="POST" class="form__body">
+                            <div class="form__title">Оставить заявку</div>
+                            <div class="form__item">
+                                <label for="" class="form__label">Имя*:</label>
+                                <input id="" type="text" name="user_name" placeholder="Например, Олег" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="" class="form__label">E-mail*:</label>
+                                <input id="" type="text" name="user_email" placeholder="example@gmail.com" class="form__input _req _email">
+                            </div>
+                            <div class="form__item">
+                                <label for="" class="form__label">Номер телефона*:</label>
+                                <input id="" type="text" name="user_phone" placeholder="+XXXXXXXXXXXX" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="" class="form__label">Сообщение:</label>
+                                <textarea name="user_message" id=""  class="form__input"></textarea>
+                            </div>
+                            <button type="submit" class="form__button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div><!-- /.form -->
@@ -322,7 +355,11 @@
         <script src="./assets/js/jquery.event.move.js"></script>
         <script src="./assets/js/jquery.twentytwenty.js"></script>
         <script src="./assets/js/beforeafter.js"></script>
-        <script src="./assets/js/script.js"></script>
-
+        <script src="assets/slick/slick.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
