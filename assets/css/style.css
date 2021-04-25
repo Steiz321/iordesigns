@@ -400,14 +400,14 @@ body {
 
 /* slider */
 .slider__wrapper {
-    display: none;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     padding-top: 40px;
 }
 
 .slider__wrapper.active {
-    display: block;
+    visibility: visible;
 }
 
 .slider {
